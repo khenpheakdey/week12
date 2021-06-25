@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Todo;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Models\Todo;
 use Illuminate\Validation\Rule;
-use Illuminate\Http\Request;
 
 class TodoController extends Controller
 {
+    //
     /**
      * Display a listing of the resource.
      *

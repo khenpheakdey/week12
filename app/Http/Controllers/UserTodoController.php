@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\API\UserTodoController;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\Todo;
 use Illuminate\Http\Request;
+use App\Models\Todo;
 use Illuminate\Validation\Rule;
 
 class UserTodoController extends Controller
 {
+    //
     /**
      * Display a listing of the resource.
      *

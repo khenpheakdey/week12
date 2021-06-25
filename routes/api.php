@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\Todo\TodoController;
+use App\Http\Controllers\TodoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
-Route::resource('todo', TodoController::class);
 
-Route::middleware('auth:sanctum')->group(function () { });
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::resource('todo', TodoController::class);
+});
